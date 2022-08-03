@@ -1,4 +1,4 @@
 **/.env
-*ignore*
+ignore/
 venv
 *.pem
