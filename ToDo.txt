@@ -3,7 +3,7 @@ restart 1
 ### TODO List ### 
 Set up vs code folders - done
 set up virt env - done
-Create a gitHub reposiory - 
+Create a gitHub reposiory and connect - done 
 
 set up aws
     set up a AWS EC2 VM - done

@@ -1,5 +1,10 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
+from rest_framework.decorators import api_view
+from rest_framework.parsers import JSONParser
+from rest_framework import status
+from artists.models import Artist
+from artists.serializers import ArtistSerializer
 
 dmyartist = [
     {
@@ -25,3 +30,35 @@ def artistlist(request):
         'artists': dmyartist
     }
     return render(request,'artists/list.html', context)
+
+@api_view(['GET', 'POST', 'DELETE'])
+def Artist_list(request):
+    if request.method == 'GET':
+        artists = Artist.objects.all()
+
+        name = request.GET.get('name', None)
+        if name is not None:
+            artists = artists.filter(name__icontains=name)
+
+        artists_serializer = ArtistSerializer(artists, many=True)
+        return JsonResponse(artists_serializer.data, safe=False)
+        # 'safe=False' for objects serialization
+
+    elif request.method == 'POST':
+        Artist_data = JSONParser().parse(request)
+        Artist_serializer = ArtistSerializer(data=Artist_data)
+        if Artist_serializer.is_valid():
+            Artist_serializer.save()
+            return JsonResponse(Artist_serializer.data,
+                                status=status.HTTP_201_CREATED)
+        return JsonResponse(Artist_serializer.errors,
+                            status=status.HTTP_400_BAD_REQUEST)
+
+    elif request.method == 'DELETE':
+        count = Artist.objects.all().delete()
+        return JsonResponse(
+            {
+                'message':
+                '{} Artist were deleted successfully!'.format(count[0])
+            },
+            status=status.HTTP_204_NO_CONTENT)
