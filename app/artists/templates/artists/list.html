@@ -1,0 +1,23 @@
+{% extends "artists/home.html" %}
+
+{% block content2 %}
+<div>
+    <h5 Class="h5">Artists List</h5>
+</div>
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+    </tr>
+    {% for artist in artists %}
+    <tr>
+        <td>{{ artist.id }}</td>
+        <td>
+            <a class=".btn-link" href="{{artist.id}}/"> 
+            {{ artist.name }}</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock content2 %}

@@ -1,0 +1,76 @@
+restart 1
+
+### TODO List ### 
+Set up vs code folders - done
+set up virt env - done
+Create a gitHub reposiory - 
+
+set up aws
+    set up a AWS EC2 VM - done
+    create a private key for c-tunes - done
+    set up elastic IP - done
+    create IAM role - done
+    create ECR (repository) - done
+    set up ec2 with -done
+        docker - done
+        docker compose - done
+        aws cli - done
+    add postgress security role to EC2 - done
+    create a RDS postgress database - done
+
+Elastic IP:
+13.56.63.45
+
+EC2 Public IPv4 DNS:
+ec2-13-56-63-45.us-west-1.compute.amazonaws.com
+
+ECR URI
+739505655405.dkr.ecr.us-west-1.amazonaws.com/c_tunes_aws
+
+DB host end point
+ctunes-1.cucjg0dw7o5k.us-west-1.rds.amazonaws.com
+
+start with workshop 2 - done
+update the references to the DB - done
+create docker compose container - done
+upload to AWS - done
+Test connection - done
+
+start with users      
+    Build schema model
+        inital build successful just artist and user tables
+        complete the db model
+    populate with seed data
+    test 
+        got connections to artist and user tables working 
+        got the index display for artist to work
+
+    figure out how to click users and list the user index
+    build href for each item listed in the artist index
+    
+
+    populate main tables with data
+        users songs
+            - populate with dummy data
+
+            - fix the dummy data python file to get the record count and max, min record id for both users and songs.  right now you have to manually look up the user and song key min / max if you rewrote the database this code wiould not work
+
+    create REST API end points at least 4
+        - list users (index) done
+        - ensure you can connect to all tables using (index) end point
+        - create user
+        - update password
+        - delete user
+        - get list of user songs
+        - aritst index - done
+        - get list albums of an artist
+        - list album and songs for artist
+
+    testing 
+        db connections and read write 
+        automate push to deploy on aws
+
+
+    visualization?
+        - use django templates
+        - aritst index displays 
