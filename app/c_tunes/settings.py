@@ -34,8 +34,10 @@ ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1', 'ec2-13-56-63-45.us-west-1
 
 INSTALLED_APPS = [
     'c_tunes',
-    'artists.apps.ArtistsConfig',
     'users.apps.UsersConfig',
+    'artists.apps.ArtistsConfig',
+    'albums.apps.AlbumsConfig',
+    'songs.apps.SongsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

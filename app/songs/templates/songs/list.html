@@ -1,0 +1,23 @@
+{% extends "songs/home.html" %}
+
+{% block content2 %}
+<div>
+    <h5 Class="h5">Song List</h5>
+</div>
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+    </tr>
+    {% for song in songs %}
+    <tr>
+        <td>{{ song.id }}</td>
+        <td>
+            <a class=".btn-link" href="{{artist.id}}/"> 
+            {{ song.title }}</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock content2 %}

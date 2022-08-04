@@ -3,8 +3,8 @@ from django.http import HttpResponse, JsonResponse
 from rest_framework.decorators import api_view
 from rest_framework.parsers import JSONParser
 from rest_framework import status
-from artists.models import Artist
-from artists.serializers import ArtistSerializer
+from .models import Artist
+from .serializers import ArtistSerializer
 
 dmyartist = [
     {
@@ -27,7 +27,7 @@ def artisthome(request):
 
 def artistlist(request):
     context = {
-        'artists': dmyartist
+        'artists': Artist.objects.all()
     }
     return render(request,'artists/list.html', context)
 

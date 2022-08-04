@@ -1,17 +1,17 @@
 {% extends "c_tunes/base.html" %}
 
-{% block title %}Artists | {% endblock title %}
+{% block title %}Albums | {% endblock title %}
 
 {% block content %}
 <div>
-    <h2>Artists home</h2>
+    <h2>Albums home</h2>
 </div>
 
 <div>
     <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
         <div class="container">
             <!-- <a class="navbar-brand ml-4 mr-4" href="{% url 'app-home' %}"><b>Voixla</b></a> ORIGINAL  -->
-            <a class="ml-4 mr-4" href="{% url 'artists-list' %}" class="navbar-brand">
+            <a class="ml-4 mr-4" href="{% url 'albums-list' %}" class="navbar-brand">
             List all
             </a>
             <button
