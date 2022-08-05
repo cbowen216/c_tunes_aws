@@ -3,7 +3,7 @@ from django.http import HttpResponse, JsonResponse
 from rest_framework.decorators import api_view
 from rest_framework.parsers import JSONParser
 from rest_framework import status
-from .models import Songs
+from .models import Song
 from .serializers import SongSerializer
 
 def songhome(request):
@@ -11,6 +11,6 @@ def songhome(request):
 
 def songlist(request):
     context = {
-        'songs': Songs.objects.all()
+        'songs': Song.objects.all()
     }
     return render(request,'songs/list.html', context)

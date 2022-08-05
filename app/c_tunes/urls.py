@@ -22,6 +22,6 @@ urlpatterns = [
     path('', views.home, name='app-home'),
     path('artists/', include('artists.urls')),
     path('users/', include('users.urls')),
-    path('albums/', include('albums.urls')),
     path('songs/', include('songs.urls')),
+    path('albums/', include('albums.urls')),
 ]

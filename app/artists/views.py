@@ -6,23 +6,7 @@ from rest_framework import status
 from .models import Artist
 from .serializers import ArtistSerializer
 
-dmyartist = [
-    {
-        'id': 1,
-        'name': 'Pink Floyd'
-    },
-    {
-        'id': 2,
-        'name': 'Pink'
-    },
-    {
-        'id': 3,
-        'name': 'Metallica'
-    }
-]
-
 def artisthome(request):
-
     return render(request, 'artists/home.html')
 
 def artistlist(request):

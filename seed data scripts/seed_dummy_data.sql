@@ -39,13 +39,13 @@ TRUNCATE TABLE albums CASCADE;
 
 -- Users
 INSERT INTO users (email, password)
-VALUES ('chris@chris.com', 'password123');
+VALUES ('chris@chris.com', 'thickness123');
 
 INSERT INTO users (email, password)
-VALUES ('you@domain.com', 'password');
+VALUES ('you@domain.com', 'underscore');
 
 INSERT INTO users (email, password)
-VALUES ('other@place.com', 'mypassword');
+VALUES ('other@place.com', 'myplace123');
 
 
 -- artists
