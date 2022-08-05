@@ -61,7 +61,7 @@ VALUES('Beatles');
 INSERT INTO artists (name)
 VALUES('Missy Elliot');
 
-'''
+
 -- add albums
 INSERT INTO albums (title, year, total_discs)
 VALUES('The Wall', 1979, 2);
@@ -741,5 +741,3 @@ INSERT INTO songs(title, length, track_number, disc_number, written_by, track_of
         WHERE name = 'Missy Elliot');
 
 -- users_songs
-
-'''
