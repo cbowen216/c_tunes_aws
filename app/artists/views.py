@@ -15,8 +15,11 @@ def artistlist(request):
     }
     return render(request,'artists/list.html', context)
 
+def artistadd(request):
+    return render(request, 'artists/add.html')
+
 @api_view(['GET', 'POST', 'DELETE'])
-def Artist_list(request):
+def Artist_api(request):
     if request.method == 'GET':
         artists = Artist.objects.all()
 

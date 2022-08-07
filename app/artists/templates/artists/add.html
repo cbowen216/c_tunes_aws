@@ -1,0 +1,14 @@
+{% extends "artists/home.html" %}
+
+{% block content2 %}
+<div>
+    <h5 Class="h5">Add a new Artist</h5>
+</div>
+
+<form action="/action_page.php">
+    <label for="artist_name">Artist name:</label>
+    <input type="text" id="artist_name" name="artist_name"><br><br>
+    <input type="submit" value="Submit">
+  
+</form>
+{% endblock content2 %}
