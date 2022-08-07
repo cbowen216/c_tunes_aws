@@ -13,16 +13,16 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='album',
             name='disc_count',
-            field=models.PositiveSmallIntegerField(blank=True, default='0', verbose_name='Total Number of Discs'),
+            field=models.PositiveSmallIntegerField(blank=True, default=0, verbose_name='Total Number of Discs'),
         ),
         migrations.AlterField(
             model_name='album',
             name='track_count',
-            field=models.PositiveSmallIntegerField(blank=True, default='0', verbose_name='Total Number of Tracks'),
+            field=models.PositiveSmallIntegerField(blank=True, default=0, verbose_name='Total Number of Tracks'),
         ),
         migrations.AlterField(
             model_name='album',
             name='year_released',
-            field=models.PositiveSmallIntegerField(default='0'),
+            field=models.PositiveSmallIntegerField(default=0),
         ),
     ]

@@ -13,7 +13,7 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='song',
             name='disc_number',
-            field=models.PositiveSmallIntegerField(blank=True, default='0'),
+            field=models.PositiveSmallIntegerField(blank=True, default=0),
         ),
         migrations.AlterField(
             model_name='song',
@@ -23,6 +23,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='song',
             name='track_number',
-            field=models.PositiveSmallIntegerField(blank=True, default='0'),
+            field=models.PositiveSmallIntegerField(blank=True, default=0),
         ),
     ]
