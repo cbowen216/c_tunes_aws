@@ -3,18 +3,20 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.template import RequestContext
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout, get_user_model
+from django.contrib.auth.decorators import login_required
 from django.conf import settings
-from django.views.decorators.csrf import csrf_exempt
 from django.core.mail import BadHeaderError
 from django.template import loader
+from .forms import UserRegisterForm
 
 # Create your views here.
 User = get_user_model()
 
-def usershome(request):
-
-    return HttpResponse('<h1>Users Home</h1>')
-
+def userlist(request):
+    context = {
+        'users': User.objects.all()
+    }
+    return render(request,'users/list.html', context)
 
 def register(request):
     next = request.GET.get('next', '/')
@@ -35,26 +37,17 @@ def register(request):
 
 def register(request):
     if request.method == 'POST':
-        username = request.POST['username']
-        password = request.POST['password']
-        firstname = request.POST['firstname']
-        lastname = request.POST['lastname']
-        email = request.POST['email']
-
-        print("----------------- register called")
-        print(username)
-        print(password)
-        print(firstname)
-        print(lastname)
-        print(email)
-
-        # try:
-        #     user = get_object_or_404(User, username=username)
-        # except:
-        #     pass
-
-        messages.success(request,
-                         f'Your account has been created! You can now login!')
-        return redirect('login')
+        form = UserRegisterForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data.get('username')
+            messages.success(request,
+                            f'{username} Your account has been created! You can now login!')
+            return redirect('login')
     else:
-        return render(request, 'users/register.html')
+        form = UserRegisterForm()
+    return render(request, 'users/register.html', {'form': form})
+
+@login_required
+def proile(request):
+    return render(request, 'users/profile.html')

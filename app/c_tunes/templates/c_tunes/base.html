@@ -1,6 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
+
 <!--Header start-->
 
 <head>
@@ -13,10 +14,6 @@
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
     <!-- custom css -->
     <link rel="stylesheet" href="/static/css/custom.css" />
-
-    <title>{% block title %}{% endblock title %}C-Tunes</title>
-
-    {% block extrahead %} {% endblock %}
     <!-- Bootstrap Core JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
@@ -27,56 +24,52 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
         integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
         crossorigin="anonymous"></script>
+
+    <title>{% block title %}{% endblock title %}C-Tunes</title>
+
+    {% block extrahead %} {% endblock %}
+
 </head>
 
 <!--Body start-->
 
 <body>
+    <div class="container pt-1">
+        <h1 class="h1">Welcome to C-Tunes</h1>
+    </div>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
         <div class="container">
-            <!-- <a class="navbar-brand ml-4 mr-4" href="{% url 'app-home' %}"><b>Voixla</b></a> ORIGINAL  -->
+
             <a class="ml-4 mr-4" href="{% url 'app-home' %}" class="navbar-brand">
-                C-Tunes
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                Home  </a>
+            <div class="collapse navbar-collapse ml-4 mr-4" id="navbarSupportedContent">
                 <ul class="navbar-nav">
 
-                    <li class="nav-item active">
-                        <a class="nav-link" href="{% url 'artists-home' %}">Artists</a>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'artists-home' %}">Artists</a>
                     </li>
 
-                    <li class="nav-item active">
-                        <a class="nav-link" href="{% url 'albums-home' %}">Albums</a>
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="{% url 'albums-home' %}">Albums</a>
                     </li>
 
-                    <li class="nav-item active">
-                        <a class="nav-link" href="{% url 'songs-home' %}">Songs</a>
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="{% url 'songs-home' %}">Songs</a>
                     </li>
                 </ul>
-                <!-- Navbar links (left-justified) -->
-                <span class="ml-auto navbar-text"></span>
-                <ul class="navbar-nav mr-0">
+            </div>
+            
+            <!-- Navbar links (right-justified) -->
+            <div>
+                <span class="navbar-text"></span>
+                <ul class="navbar-nav">
                     {% if user.is_authenticated %}
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="menu"
-                            aria-haspopup="true" aria-expanded="false">{{user.username}}<span class="caret"></span></a>
-                        <div class="dropdown-menu m-0" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{% url 'logout' %}">Logout</a>
-                        </div>
-                    </li>
+                    <a class="nav-item nav-link" href="{% url 'profile' %}" aria-haspopup="true" aria-expanded="true">  ||  Logged in as:    {{user.username}}  ||  </a>
+                    <a class=" nav-item nav-link" href="{% url 'logout' %}">Logout</a>
+                        
                     {% else %}
-                    <li class="nav-item dropdown" data-tooltip="Login">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="menu" aria-haspopup="true"
-                            aria-expanded="false">Login<span class="caret"></span></a>
-                        <div class="dropdown-menu m-0" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{% url 'login' %}">Login</a>
-                            <a class="dropdown-item" href="{% url 'register' %}">Register</a>
-                        </div>
-                    </li>
+                    <a class="nav-item nav-link" href="{% url 'login' %}">||  Login  ||</a>
+                    <a class="nav-item nav-link" href="{% url 'register' %}">Register</a>
                     {% endif %}
                 </ul>
             </div>
@@ -84,9 +77,20 @@
     </nav>
 
     <!--Content start-->
-    <div>
-        <h1>Welcome to C-tunes</h1>
-        {% block content %}<p>A music database</p>{% endblock %}
+    <div class="container">
+
+        {% if messages %}
+        {% for message in messages %}
+        <div class="alert-{{ message.tags }}">
+            {{ message }}
+        </div>
+        {% endfor %}
+        {% endif %}
+        {% block content %}
+        <p></p>
+        <h2>A music database</h2>
+        <p></p>
+        {% endblock %}
     </div>
 
     <!--Footer start-->

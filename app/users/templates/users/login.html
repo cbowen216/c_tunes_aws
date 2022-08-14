@@ -1,0 +1,26 @@
+{% extends "c_tunes/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<div class="contnet-section">
+    <form method="POST">
+        {% csrf_token %}
+        <fieldset class="form-group">
+            <legend class="boarder-bottom mb-4">
+                Login
+            </legend>
+            {{ form|crispy }}
+        </fieldset>
+        <div class="form-group">
+            <button class="btn btn-outline-info" type="submit">Login</button>
+        </div>
+    </form>
+    <div class="boarder-top pt-3">
+        <p><small class="text-muted">Need an account? <a class="ml-2" href="{% url 'register' %}">Sign Up Now.</a>
+        </small></p>
+        <p><small class="text-muted">Forgot Username / Password? <a class="ml-2" href="#">Too BAD!</a>
+        </small></p>
+    </div>
+</div>
+
+{% endblock content %}

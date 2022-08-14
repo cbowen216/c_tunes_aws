@@ -1,9 +1,9 @@
-{% extends "artists/home.html" %}
+{% extends "users/home.html" %}
 {% load static %}
 
 {% block content2 %}
 <div class="pt-2">
-    <h5>Artists List</h5>
+    <h5>User List</h5>
 </div>
 
 <table class="table">
@@ -11,12 +11,12 @@
         <th>ID</th>
         <th>Name</th>
     </tr>
-    {% for artist in artists %}
+    {% for user in users %}
     <tr>
-        <td>{{ artist.id }}</td>
+        <td>{{ user.id }}</td>
         <td>
             <a class=".btn-link" href="{{artist.id}}/"> 
-            {{ artist.name }}</a>
+            {{ user.name }}</a>
         </td>
     </tr>
     {% endfor %}
