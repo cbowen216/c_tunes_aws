@@ -49,5 +49,9 @@ def register(request):
     return render(request, 'users/register.html', {'form': form})
 
 @login_required
-def proile(request):
+def profile(request):
     return render(request, 'users/profile.html')
+
+@login_required
+def userhome(request):
+    return render(request, 'users/home.html')

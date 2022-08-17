@@ -39,8 +39,9 @@ Test connection - done
 
 start with artist and users      
     Build schema model - inital build successful just artist and user tables
-    build list view for artists
-    set up template structure 
+    finishe the user build out - done
+    build list view for artists -done 
+    set up template structure  - done
         Base -> app home page -> app Detail page
 
     complete the db model and build list view
@@ -58,7 +59,7 @@ start with artist and users
 
     create REST API end points at least 4
         - list all artist / album /songs - Done
-        - create user
+        - create user - done
         - update password
         - delete user
         - get list of user songs

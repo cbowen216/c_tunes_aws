@@ -1,12 +1,16 @@
 {% extends "users/home.html" %}
-{% block content %}
-<div class="pt-2">
-    <h5 Class="h5">Profile page: {{ user.username }}</h5>
-</div>
+{% load static %}
 
-<div class="contnet-section">
-    <p>
-    </p> 
-</div>
+{% block content2 %}
 
-{% endblock content %}
+<div class="content-section">
+    <div class="media">
+        <image class="rounded-circle account-img" src="{{ user.profile.image.url }}" alt="profile picture" width="100">
+        <div class="media-body">
+            <h2 class="account-heading">{{ user.username }}</h2>
+            <p class="text-secondary">{{ user.email }}</p>
+        </div>
+    </div>
+
+</div>
+{% endblock content2 %}

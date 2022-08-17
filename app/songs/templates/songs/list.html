@@ -19,8 +19,10 @@
     {% for song in songs %}
     <tr>
         <td>{{ song.id }}</td>
-        <td>{{ song.artist_id.name }}</td>
-        <td>{{ song.album_id.title }}</td>
+        <td><a class=".btn-link" href="{{song.artist_id}}/">
+            {{ song.artist_id.name }}</td>
+        <td><a class=".btn-link" href="{{song.album_id}}/"> 
+            {{ song.album_id.title }}</td>
         <td>{{ song.track_number }}</td>
         <td>
             <a class=".btn-link" href="{{song.id}}/"> 

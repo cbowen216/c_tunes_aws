@@ -7,3 +7,6 @@ class Album(models.Model):
     track_count = models.PositiveSmallIntegerField('Total Number of Tracks', blank=True, default=0)
     disc_count = models.PositiveSmallIntegerField('Total Number of Discs', blank=True, default=0)
     artist_id = models.ForeignKey(Artist, on_delete=models.CASCADE)
+
+    def __str__(self) -> str:
+        return f'{self.title}'

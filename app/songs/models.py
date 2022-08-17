@@ -11,3 +11,5 @@ class Song(models.Model):
     artist_id = models.ForeignKey(Artist, on_delete=models.CASCADE)
     album_id = models.ForeignKey(Album, on_delete=models.CASCADE)
 
+    def __str__(self) -> str:
+        return f'{self.title}'
