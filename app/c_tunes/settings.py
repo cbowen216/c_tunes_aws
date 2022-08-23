@@ -33,19 +33,20 @@ ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1', 'ec2-13-56-63-45.us-west-1
 # Application definition
 
 INSTALLED_APPS = [
-    'c_tunes',
-    'users.apps.UsersConfig',
-    'artists.apps.ArtistsConfig',
-    'songs.apps.SongsConfig',
-    'albums.apps.AlbumsConfig',
-    'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
+    'c_tunes',
+    'albums.apps.AlbumsConfig',
+    'api.apps.ApiConfig',
+    'artists.apps.ArtistsConfig',
+    'users.apps.UsersConfig',
+    'songs.apps.SongsConfig',
+    'crispy_forms',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [

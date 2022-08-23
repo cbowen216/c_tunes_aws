@@ -4,7 +4,6 @@ from rest_framework.decorators import api_view
 from rest_framework.parsers import JSONParser
 from rest_framework import status
 from .models import Song
-from .serializers import SongSerializer
 
 def songhome(request):
     return render(request, 'songs/home.html')
