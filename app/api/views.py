@@ -12,7 +12,6 @@ from .serializers import AlbumSerializer, ArtistSerializer, SongSerializer
 
 # Create your views here.
 
-
 @api_view(['GET', 'POST', 'DELETE'])
 def Artist_api(request):
     if request.method == 'GET':

@@ -1,6 +1,7 @@
 from django.db import models
 from artists.models import Artist
 
+
 class Album(models.Model):
     title = models.CharField(max_length=200, blank=False, default='')
     year_released = models.PositiveSmallIntegerField(blank=False, default=0)
