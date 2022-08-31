@@ -1,0 +1,609 @@
+[
+	{
+		"length": "3:20",
+		"title": "In The Flesh?",
+		"track_number": 1,
+		"track_of": 1,
+		"artist_id": 2,
+		"disc_number": 1
+	},
+	{
+		"length": "2:27",
+		"title": "The Thin Ice",
+		"track_number": 2,
+		"track_of": 1,
+		"artist_id": 2,
+		"disc_number": 1
+	},
+	{
+		"length": "3:11",
+		"title": "Another Brick in the Wall, Part 1",
+		"track_number": 3,
+		"track_of": 1,
+		"artist_id": 2,
+		"disc_number": 1
+	},
+	{
+		"length": "1:46",
+		"title": "The Happiest Days of Our Lives",
+		"track_number": 4,
+		"track_of": 1,
+		"artist_id": 2,
+		"disc_number": 1
+	},
+	{
+		"length": "3:59",
+		"title": "Another Brick in the Wall, Part 2",
+		"track_number": 5,
+		"track_of": 1,
+		"artist_id": 2,
+		"disc_number": 1
+	},
+	{
+		"length": "5:32",
+		"title": "Mother",
+		"track_number": 6,
+		"track_of": 1,
+		"artist_id": 2,
+		"disc_number": 1
+	},
+	{
+		"length": "2:45",
+		"title": "Goodbye Blue Sky",
+		"track_number": 7,
+		"track_of": 1,
+		"artist_id": 2,
+		"disc_number": 1
+	},
+	{
+		"length": "2:10",
+		"title": "Empty Spaces",
+		"track_number": 8,
+		"track_of": 1,
+		"artist_id": 2,
+		"disc_number": 1
+	},
+	{
+		"length": "3:25",
+		"title": "Young Lust",
+		"track_number": 9,
+		"track_of": 1,
+		"artist_id": 2,
+		"disc_number": 1
+	},
+	{
+		"length": "3:41",
+		"title": "One of My Turns",
+		"track_number": 10,
+		"track_of": 1,
+		"artist_id": 2,
+		"disc_number": 1
+	},
+	{
+		"length": "4:08",
+		"title": "Dont Leave Me Now",
+		"track_number": 11,
+		"track_of": 1,
+		"artist_id": 2,
+		"disc_number": 1
+	},
+	{
+		"length": "1:18",
+		"title": "Another Brick in the Wall, Part 3",
+		"track_number": 12,
+		"track_of": 1,
+		"artist_id": 2,
+		"disc_number": 1
+	},
+	{
+		"length": "1:16",
+		"title": "Goodbye Cruel World",
+		"track_number": 13,
+		"track_of": 1,
+		"artist_id": 2,
+		"disc_number": 2
+	},
+	{
+		"length": "4:40",
+		"title": "Hey You",
+		"track_number": 1,
+		"track_of": 1,
+		"artist_id": 2,
+		"disc_number": 2
+	},
+	{
+		"length": "2:44",
+		"title": "Is There Anybody Out There?",
+		"track_number": 2,
+		"track_of": 1,
+		"artist_id": 2,
+		"disc_number": 2
+	},
+	{
+		"length": "3:26",
+		"title": "Nobody Home",
+		"track_number": 3,
+		"track_of": 1,
+		"artist_id": 2,
+		"disc_number": 2
+	},
+	{
+		"length": "1:35",
+		"title": "Vera",
+		"track_number": 4,
+		"track_of": 1,
+		"artist_id": 2,
+		"disc_number": 2
+	},
+	{
+		"length": "1:21",
+		"title": "Bring the Boys Back Home",
+		"track_number": 5,
+		"track_of": 1,
+		"artist_id": 2,
+		"disc_number": 2
+	},
+	{
+		"length": "6:32",
+		"title": "Comfortably Numb",
+		"track_number": 6,
+		"track_of": 1,
+		"artist_id": 2,
+		"disc_number": 2
+	},
+	{
+		"length": "1:36",
+		"title": "The Show Must Go On",
+		"track_number": 7,
+		"track_of": 1,
+		"artist_id": 2,
+		"disc_number": 2
+	},
+	{
+		"length": "4:15",
+		"title": "In The Flesh",
+		"track_number": 8,
+		"track_of": 1,
+		"artist_id": 2,
+		"disc_number": 2
+	},
+	{
+		"length": "4:20",
+		"title": "Run Like Hell",
+		"track_number": 9,
+		"track_of": 1,
+		"artist_id": 2,
+		"disc_number": 2
+	},
+	{
+		"length": "4:04",
+		"title": "Waiting for the Worms",
+		"track_number": 10,
+		"track_of": 1,
+		"artist_id": 2,
+		"disc_number": 2
+	},
+	{
+		"length": "0:30",
+		"title": "Stop",
+		"track_number": 11,
+		"track_of": 1,
+		"artist_id": 2,
+		"disc_number": 2
+	},
+	{
+		"length": "5:13",
+		"title": "The Trial",
+		"track_number": 12,
+		"track_of": 1,
+		"artist_id": 2,
+		"disc_number": 2
+	},
+	{
+		"length": "1:41",
+		"title": "Outside the Wall",
+		"track_number": 13,
+		"track_of": 1,
+		"artist_id": 2,
+		"disc_number": 2
+	},
+	{
+		"length": "1:24",
+		"title": "Pigs on the Wing (Part 1)",
+		"track_number": 1,
+		"track_of": 2,
+		"artist_id": 2,
+		"disc_number": 1
+	},
+	{
+		"length": "17:04",
+		"title": "Dogs",
+		"track_number": 2,
+		"track_of": 2,
+		"artist_id": 2,
+		"disc_number": 1
+	},
+	{
+		"length": "11:28",
+		"title": "Pigs (Three Different Ones)",
+		"track_number": 3,
+		"track_of": 2,
+		"artist_id": 2,
+		"disc_number": 1
+	},
+	{
+		"length": "10:20",
+		"title": "Sheep",
+		"track_number": 4,
+		"track_of": 2,
+		"artist_id": 2,
+		"disc_number": 1
+	},
+	{
+		"length": "1:24",
+		"title": "Pigs on the Wing (Part 2)",
+		"track_number": 5,
+		"track_of": 2,
+		"artist_id": 2,
+		"disc_number": 1
+	},
+	{
+		"length": "5:13",
+		"title": "Battery",
+		"track_number": 1,
+		"track_of": 3,
+		"artist_id": 1,
+		"disc_number": 1
+	},
+	{
+		"length": "8:36",
+		"title": "Master of Puppets",
+		"track_number": 2,
+		"track_of": 3,
+		"artist_id": 1,
+		"disc_number": 1
+	},
+	{
+		"length": "6:36",
+		"title": "The Thing That Should Not Be",
+		"track_number": 3,
+		"track_of": 3,
+		"artist_id": 1,
+		"disc_number": 1
+	},
+	{
+		"length": "6:27",
+		"title": "Welcome Home (Sanitarium)",
+		"track_number": 4,
+		"track_of": 3,
+		"artist_id": 1,
+		"disc_number": 1
+	},
+	{
+		"length": "8:17",
+		"title": "Disposable Heros",
+		"track_number": 5,
+		"track_of": 3,
+		"artist_id": 1,
+		"disc_number": 1
+	},
+	{
+		"length": "5:40",
+		"title": "Leper Messiah",
+		"track_number": 6,
+		"track_of": 3,
+		"artist_id": 1,
+		"disc_number": 1
+	},
+	{
+		"length": "8:27",
+		"title": "Orion",
+		"track_number": 7,
+		"track_of": 3,
+		"artist_id": 1,
+		"disc_number": 1
+	},
+	{
+		"length": "5:32",
+		"title": "Damage, Inc.",
+		"track_number": 8,
+		"track_of": 3,
+		"artist_id": 1,
+		"disc_number": 1
+	},
+	{
+		"length": "4:44",
+		"title": "Fight Fire with Fire",
+		"track_number": 1,
+		"track_of": 4,
+		"artist_id": 1,
+		"disc_number": 1
+	},
+	{
+		"length": "6:37",
+		"title": "Ride the Lightning",
+		"track_number": 2,
+		"track_of": 4,
+		"artist_id": 1,
+		"disc_number": 1
+	},
+	{
+		"length": "5:11",
+		"title": "For Whom the Bell Tolls",
+		"track_number": 3,
+		"track_of": 4,
+		"artist_id": 1,
+		"disc_number": 1
+	},
+	{
+		"length": "6:55",
+		"title": "Fade to Black",
+		"track_number": 4,
+		"track_of": 4,
+		"artist_id": 1,
+		"disc_number": 1
+	},
+	{
+		"length": "4:04",
+		"title": "Trapped Under Ice",
+		"track_number": 5,
+		"track_of": 4,
+		"artist_id": 1,
+		"disc_number": 1
+	},
+	{
+		"length": "4:24",
+		"title": "Escape",
+		"track_number": 6,
+		"track_of": 4,
+		"artist_id": 1,
+		"disc_number": 1
+	},
+	{
+		"length": "6:36",
+		"title": "Creeping Death",
+		"track_number": 7,
+		"track_of": 4,
+		"artist_id": 1,
+		"disc_number": 1
+	},
+	{
+		"length": "8:55",
+		"title": "The Call of Ktulu",
+		"track_number": 8,
+		"track_of": 4,
+		"artist_id": 1,
+		"disc_number": 1
+	},
+	{
+		"length": "3:36",
+		"title": "Two of Us",
+		"track_number": 1,
+		"track_of": 5,
+		"artist_id": 3,
+		"disc_number": 1
+	},
+	{
+		"length": "3:54",
+		"title": "Dig a Pony",
+		"track_number": 2,
+		"track_of": 5,
+		"artist_id": 3,
+		"disc_number": 1
+	},
+	{
+		"length": "3:48",
+		"title": "Across the Universe",
+		"track_number": 3,
+		"track_of": 5,
+		"artist_id": 3,
+		"disc_number": 1
+	},
+	{
+		"length": "2:26",
+		"title": "I Me Mine",
+		"track_number": 4,
+		"track_of": 5,
+		"artist_id": 3,
+		"disc_number": 1
+	},
+	{
+		"length": "0:50",
+		"title": "Dig It",
+		"track_number": 5,
+		"track_of": 5,
+		"artist_id": 3,
+		"disc_number": 1
+	},
+	{
+		"length": "4:03",
+		"title": "Let It Be",
+		"track_number": 6,
+		"track_of": 5,
+		"artist_id": 3,
+		"disc_number": 1
+	},
+	{
+		"length": "0:40",
+		"title": "Maggie Mae",
+		"track_number": 7,
+		"track_of": 5,
+		"artist_id": 3,
+		"disc_number": 1
+	},
+	{
+		"length": "3:37",
+		"title": "Ive Got a Feeling",
+		"track_number": 8,
+		"track_of": 5,
+		"artist_id": 3,
+		"disc_number": 1
+	},
+	{
+		"length": "2:45",
+		"title": "One After 909",
+		"track_number": 9,
+		"track_of": 5,
+		"artist_id": 3,
+		"disc_number": 1
+	},
+	{
+		"length": "3:38",
+		"title": "The Long and Winding Road",
+		"track_number": 10,
+		"track_of": 5,
+		"artist_id": 3,
+		"disc_number": 1
+	},
+	{
+		"length": "2:32",
+		"title": "For You Blue",
+		"track_number": 11,
+		"track_of": 5,
+		"artist_id": 3,
+		"disc_number": 1
+	},
+	{
+		"length": "3:09",
+		"title": "Get Back",
+		"track_number": 12,
+		"track_of": 5,
+		"artist_id": 3,
+		"disc_number": 1
+	},
+	{
+		"length": "1:53",
+		"title": "Bustas Intro",
+		"track_number": 1,
+		"track_of": 6,
+		"artist_id": 4,
+		"disc_number": 1
+	},
+	{
+		"length": "4:19",
+		"title": "Hit Em wit da Hee",
+		"track_number": 2,
+		"track_of": 6,
+		"artist_id": 4,
+		"disc_number": 1
+	},
+	{
+		"length": "4:17",
+		"title": "Sock It 2 Me",
+		"track_number": 3,
+		"track_of": 6,
+		"artist_id": 4,
+		"disc_number": 1
+	},
+	{
+		"length": "4:11",
+		"title": "The Rain (Supa Dupa Fly)",
+		"track_number": 4,
+		"track_of": 6,
+		"artist_id": 4,
+		"disc_number": 1
+	},
+	{
+		"length": "4:57",
+		"title": "Beep Me 911",
+		"track_number": 5,
+		"track_of": 6,
+		"artist_id": 4,
+		"disc_number": 1
+	},
+	{
+		"length": "3:18",
+		"title": "They Dont Wanna Fuck wit Me",
+		"track_number": 6,
+		"track_of": 6,
+		"artist_id": 4,
+		"disc_number": 1
+	},
+	{
+		"length": "3:17",
+		"title": "Pass da Blunt",
+		"track_number": 7,
+		"track_of": 6,
+		"artist_id": 4,
+		"disc_number": 1
+	},
+	{
+		"length": "0:43",
+		"title": "Bite Our Style (Interlude)",
+		"track_number": 8,
+		"track_of": 6,
+		"artist_id": 4,
+		"disc_number": 1
+	},
+	{
+		"length": "4:11",
+		"title": "Friendly Skies",
+		"track_number": 9,
+		"track_of": 6,
+		"artist_id": 4,
+		"disc_number": 1
+	},
+	{
+		"length": "4:07",
+		"title": "Best Friends",
+		"track_number": 10,
+		"track_of": 6,
+		"artist_id": 4,
+		"disc_number": 1
+	},
+	{
+		"length": "4:11",
+		"title": "Dont Be Commin (In My Face)",
+		"track_number": 11,
+		"track_of": 6,
+		"artist_id": 4,
+		"disc_number": 1
+	},
+	{
+		"length": "3:54",
+		"title": "Izzy Izzy Ahh",
+		"track_number": 12,
+		"track_of": 6,
+		"artist_id": 4,
+		"disc_number": 1
+	},
+	{
+		"length": "4:31",
+		"title": "Why You Hurt Me",
+		"track_number": 13,
+		"track_of": 6,
+		"artist_id": 4,
+		"disc_number": 1
+	},
+	{
+		"length": "5:02",
+		"track_number": 14,
+		"track_of": 6,
+		"artist_id": 4,
+		"disc_number": 1
+	},
+	{
+		"length": "4:25",
+		"title": "Gettaway",
+		"track_number": 15,
+		"track_of": 6,
+		"artist_id": 4,
+		"disc_number": 1
+	},
+	{
+		"length": "1:38",
+		"title": "Bustas Outro",
+		"track_number": 16,
+		"track_of": 6,
+		"artist_id": 4,
+		"disc_number": 1
+	},
+	{
+		"length": "0:24",
+		"title": "Missys Finale",
+		"track_number": 17,
+		"track_of": 6,
+		"artist_id": 4,
+		"disc_number": 1
+	}
+]

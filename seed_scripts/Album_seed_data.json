@@ -1,0 +1,58 @@
+[
+	{
+		"title": "The Wall",
+		"year_released": 1979,
+		"track_count": 25,
+		"disc_count": 2,
+		"artist_id": 2
+	},
+	{
+		"title": "Animals",
+		"year_released": 1977,
+		"track_count": 5,
+		"disc_count": 1,
+		"artist_id": 2
+	},
+	{
+		"title": "Master of Puppets",
+		"year_released": 1986,
+		"track_count": 8,
+		"disc_count": 1,
+		"artist_id": 1
+	},
+	{
+		"title": "Ride the Lightning",
+		"year_released": 1984,
+		"track_count": 8,
+		"disc_count": 1,
+		"artist_id": 1
+	},
+	{
+		"title": "Let It Be",
+		"year_released": 1968,
+		"track_count": 12,
+		"disc_count": 1,
+		"artist_id": 3
+	},
+	{
+		"title": "Supa Dupa Fly",
+		"year_released": 1997,
+		"track_count": 17,
+		"disc_count": 1,
+		"artist_id": 4
+	},
+    {
+		"title": "Bat Out of Hell",
+		"year_released": 1977,
+		"track_count": 7,
+		"disc_count": 1,
+		"artist_id": 5
+	},
+    {
+		"title": "Hotel California",
+		"year_released": 1976,
+		"track_count": 9,
+		"disc_count": 1,
+		"artist_id": 6
+	}
+]

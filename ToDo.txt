@@ -1,3 +1,13 @@
+get to the db command line
+python manage.py dbshell
+
+migrate
+python manage.py makemigrations --noinput
+
+python manage.py migrate
+
+
+
 restart 1
 
 ### TODO List ### 
@@ -50,8 +60,9 @@ start with artist and users
         users - songs (many to Many) - 
 
     populate with seed data - partial
-
-    populate main tables with data
+        artists - Done
+        Albums - Done
+        Songs - in process
         users songs - 
             - fix the dummy data python file to get the record count and max, min record id for both users and songs.  right now you have to manually look up the user and song key min / max if you rewrote the database this code wiould not work
 
