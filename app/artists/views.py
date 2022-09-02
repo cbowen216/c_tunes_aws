@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from rest_framework import status
 from .models import Artist
+from .form import NewArtistForm
 
 def artisthome(request):
     return render(request, 'artists/home.html')
@@ -13,5 +14,8 @@ def artistlist(request):
     return render(request,'artists/list.html', context)
 
 def artistadd(request):
+    context = {}
     if request.method == "POST":
-        return render(request, 'artists/add.html')
+        form = NewArtistForm(request.POST)
+
+    return render(request, 'artists/add.html')

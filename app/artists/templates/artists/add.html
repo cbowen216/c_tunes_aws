@@ -7,14 +7,17 @@
 </div>
 
 <div class="contnet-section">
-    <form method="post">
+    <form method="POST">
         {% csrf_token %}
-        <label for="artist_name">Artist name:</label>
-        <input type="text" id="artist_name" name="artist_name"><br><br>
+        <fieldset class="form-group">
+            <legend class="boarder-bottom mb-4">
+                Add a New Artist
+            </legend>
+            {{ form|crispy }}
+        </fieldset>
         <div class="form-group">
-            <button class="btn btn-outline-info" type="submit">Sign Up</button>
+            <button class="btn btn-outline-info" type="submit">Submit</button>
         </div>
-    
     </form>
 </div>
 {% endblock content2 %}
