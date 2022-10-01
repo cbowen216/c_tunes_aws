@@ -14,3 +14,7 @@ class Song(models.Model):
     def __str__(self) -> str:
         return f'{self.title}'
 
+# Many to many relational table between Users and songs
+class Users_Songs(models.Model):
+    user_id = models.ForeignKey(User, on_delete=models.CASCADE)
+    song_id = models.ForeignKey(Song, on_delete=models.CASCADE)

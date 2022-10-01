@@ -8,17 +8,43 @@
 
 <table class="table">
     <tr>
-        <th>ID</th>
         <th>Name</th>
     </tr>
     {% for artist in artists %}
     <tr>
-        <td>{{ artist.id }}</td>
         <td>
-            <a class=".btn-link" href="{{artist.id}}/"> 
-            {{ artist.name }}</a>
+            <a class=".btn-link" href="/artists/{{artist.id}}/">
+                {{ artist.name }}</a>
         </td>
     </tr>
     {% endfor %}
 </table>
+
+<!--
+<br>
+{{ artists }}<br>
+Has previous: {{ artists.has_previous }}<br>
+Has next: {{ artists.has_next }}<br>
+curret page: {{ artists.number }}<br>
+# of pages: {{ artists.paginator.num_pages }}<br>
+-->
+
+<div class="pagination">
+    <span class="step-links">
+        {% if artists.has_previous %}
+        <a href="?page=1">&laquo First</a>
+        <a href="?page={{ artists.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ artists.number }} of {{ artists.paginator.num_pages }}.
+        </span>
+
+        {% if artists.has_next %}
+        <a href="?page={{ artists.next_page_number }}">next</a>
+        <a href="?page={{ artists.paginator.num_pages }}">last &raquo;</a>
+        {% endif %}
+    </span>
+</div>
+
 {% endblock content2 %}

@@ -1,0 +1,23 @@
+{% extends "artists/home.html" %}
+{% load crispy_forms_tags %}
+
+{% block content2 %}
+<div class="pt-2">
+    <h5 Class="h5">Find Artist</h5>
+</div>
+
+<div class="contnet-section">
+    <form method="POST">
+        {% csrf_token %}
+        <fieldset class="form-group">
+            <legend class="boarder-bottom mb-4">
+                Find Artist by name.
+            </legend>
+            {{ form|crispy }}
+        </fieldset>
+        <div class="form-group">
+            <button class="btn btn-outline-info" type="submit">Search</button>
+        </div>
+    </form>
+</div>
+{% endblock content2 %}

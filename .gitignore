@@ -3,3 +3,4 @@ ignore/
 venv
 *.pem
 *.exe
+*.sqlite3

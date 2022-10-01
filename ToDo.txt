@@ -1,7 +1,3 @@
-
-
-
-
 restart 1
 
 ### TODO List ### 
@@ -48,25 +44,34 @@ start with artist and users
     set up template structure  - done
         Base -> app home page -> app Detail page
 
-    complete the db model and build list view
+    complete the db model and build list view - DONE
         albums - Done
         songs - done
-        users - songs (many to Many) - 
+        users - songs (many to Many) - Done
 
     populate with seed data - partial
         artists - Done
         Albums - Done
-        Songs - in process
+        Songs - Done
+
         users songs - 
             - fix the dummy data python file to get the record count and max, min record id for both users and songs.  right now you have to manually look up the user and song key min / max if you rewrote the database this code wiould not work
 
             - populate with dummy data
 
-    create REST API end points at least 4
+    create REST API end points for the following 
         - list all artist / album /songs - Done
+        - Add artist / album /songs - Done
+        - edit artist
+        - list single artist - started
+        - Delete all artists
+
+        NO API just web
+        - User account view - done
         - create user - done
-        - update password
-        - delete user
+        - update password - done
+        - delete user 
+        
         - get list of user songs
         - get list albums for an artist
         - get list songs for an artist

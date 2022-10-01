@@ -1,24 +1,27 @@
 """
-Populate twitter database with fake data using the SQLAlchemy ORM.
-this will not work if you had rewriten the data
+Populate c-tunes database users_songs table with fake data using the django ORM.
 """
 
 import random
-from src.models import users_songs, db
-from src import create_app
+from django.contrib.auth.models import User
+from songs.models import Song, Users_Songs
 
-USER_COUNT = 3
-SONG_COUNT = 76
+song_id_list = []
+song_id_list = Song.objects.filter().values_list('pk', flat=True)
+
+user_id_list = []
+user_id_list = User.objects.filter().values_list('pk', flat=True)
+
+USER_COUNT = user_id_list.count()
+SONG_COUNT = song_id_list.count()
 USER_SONGS_COUNT = 120
 
 assert USER_SONGS_COUNT <= (USER_COUNT * SONG_COUNT)
 
+print (song_id_list)
+print (user_id_list)
+print (USER_COUNT, SONG_COUNT)
 
-
-def truncate_tables():
-    """Delete all rows from database tables"""
-    db.session.execute(users_songs.delete())
-    db.session.commit()
 
 
 def main():
@@ -56,10 +59,3 @@ def main():
 
 # run script
 main()
-
-"""
-save for later
-
-#random.randint(last_user.id - USER_COUNT + 1, last_user.id),
-
-"""

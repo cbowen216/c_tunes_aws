@@ -19,7 +19,7 @@ def Artist_api(request):
 
         name = request.GET.get('name', None)
         if name is not None:
-            artists = artists.filter(name__icontains=name)
+            artist = Artist.objects.get(name=name)
 
         artists_serializer = ArtistSerializer(artists, many=True)
         return JsonResponse(artists_serializer.data, safe=False)
@@ -43,6 +43,20 @@ def Artist_api(request):
                 '{} Artists were deleted successfully!'.format(count[0])
             },
             status=status.HTTP_204_NO_CONTENT)
+
+@api_view(['PATCH'])
+def Artist_api(request, pk):
+
+    if request.method == 'PATCH':
+        artist = Artist.objects.get(id=pk)
+        artist_serializer = ArtistSerializer(instance= artist, data=request.data)
+        if artist_serializer.is_valid():
+            artist_serializer.save()
+            return JsonResponse(artist_serializer.data,
+                                status=status.HTTP_201_CREATED)
+        return JsonResponse(artist_serializer.errors,
+                            status=status.HTTP_400_BAD_REQUEST)
+
 
 @api_view(['GET', 'POST', 'DELETE'])
 def Song_api(request):
