@@ -12,18 +12,11 @@ def artisthome(request):
     return render(request, 'artists/home.html')
 
 def artistlist(request):
-    #artist_list = Artist.objects.all().order_by('name').values()
-    p = Paginator(Artist.objects.all().order_by('name'), 10) # Show 5 artists per page.
+    p = Paginator(Artist.objects.all().order_by('name'), 10) # Show 10 artists per page.
     page = request.GET.get('page')
     artists = p.get_page(page)
-
     context = { 'artists': artists
     }
-
-    #### Context before the pagination added
-    # 'artists': Artist.objects.all().order_by('name').values()
-    ####
-
     return render(request,'artists/list.html', context)
 
 def artistview(request, pk):

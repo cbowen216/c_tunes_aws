@@ -8,7 +8,6 @@
 
 <table class="table">
     <tr>
-        <th>ID</th>
         <th>Artist</th>
         <th>Title</th>
         <th>Year</th>
@@ -18,7 +17,6 @@
     {% for album in albums %}
     
     <tr>
-        <td>{{ album.id }}</td>
         <td><a class=".btn-link" href="{{artist_id}}/"> {{ album.artist_id.name }}</a></td>
         <td>
             <a class=".btn-link" href="{{album.id}}/">
@@ -31,4 +29,24 @@
     </tr>
     {% endfor %}
 </table>
+
+<div class="pagination">
+    <span class="step-links">
+        {% if albums.has_previous %}
+        <a href="?page=1">&laquo First</a>
+        <a href="?page={{ albums.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ albums.number }} of {{ albums.paginator.num_pages }}
+        </span>
+
+        {% if albums.has_next %}
+        <a href="?page={{ albums.next_page_number }}">next</a>
+        <a href="?page={{ albums.paginator.num_pages }}">last &raquo;</a>
+        {% endif %}
+    </span>
+</div>
+
+
 {% endblock content2 %}
