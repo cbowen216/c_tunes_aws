@@ -73,9 +73,9 @@ start with artist and users
         - delete user 
         
         - get list of user songs
-        - get list albums for an artist
-        - get list songs for an artist
-        - list songs on a album 
+        - add/ delete / edit Artists / albums / songs
+        - get list albums for an artist - Done
+        - get list songs for an album - Done
         - list artist / albums / songs in a full display 
 
     testing 
