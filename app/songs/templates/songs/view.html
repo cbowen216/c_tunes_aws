@@ -1,21 +1,25 @@
-{% extends "artists/home.html" %}
+{% extends "songs/home.html" %}
 {% load static %}
 
 {% block content2 %}
 <div class="pt-2">
-    <h5>Artist</h5>
+    <h5>Song</h5>
 </div>
 
 <table class="table">
     <tr>
-        <th>Name</th>
+        <th>Title</th>
+        <th>Track #</th>
+        <th>Length</th>
+        <th>Disc #</th>
         <th></th>
         <th></th>
     </tr>
     <tr>
-        <td>
-            {{ artist.name }}
-        </td>
+        <td>{{ song.title }}</td>
+        <td>{{ song.track_number }}</td>
+        <td>{{ song.length }}</td>
+        <td>{{ song.disc_number }}</td>
 
         <td class="nav-item">
             <a class="nav-link" href="update/">Edit</a>
@@ -25,33 +29,6 @@
             <a class="nav-link" href="delete/">Delete</a>
         </td>
     </tr>
-</table>
-
-<br>
-<div class="pt-2">
-    <h6>Album List</h6>
-</div>
-<br>
-
-<table class="table">
-    <tr>
-        <th>Title</th>
-        <th>Year</th>
-        <th>Track Count</th>
-        <th>Disc Count</th>
-    </tr>
-    {% for album in albums %}
-    <tr>
-        <td>
-            <a class=".btn-link" href="/albums/{{album.id}}/">
-                {{ album.title }}
-            </a>
-        </td>
-        <td>{{ album.year_released }}</td>
-        <td>{{ album.track_count }}</td>
-        <td>{{ album.disc_count }}</td>
-    </tr>
-    {% endfor %}
 </table>
 
 <div class="pagination">

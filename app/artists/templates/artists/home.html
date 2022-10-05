@@ -4,9 +4,6 @@
 {% block title %}Artists | {% endblock title %}
 
 {% block content %}
-<div class="pt-2">
-    <h2>Artists home</h2>
-</div>
 
 <div>
     <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
@@ -35,7 +32,7 @@
 
                     <li class="nav-item active">
                     <a class="nav-link" href="{% url 'artist-add' %}"
-                        ><i class="fa fa-info fa-lg"></i>Add</a>
+                        ><i class="fa fa-info fa-lg"></i>Add Artist</a>
                     </li>
                     
                 </ul>
@@ -45,8 +42,8 @@
     </nav>
 </div>
 
-<div>
-    {% block content2 %}{% endblock content2 %}
-</div>
+    {% block content2 %}
+    {% endblock content2 %}
+
 
 {% endblock content %}

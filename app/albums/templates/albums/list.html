@@ -8,45 +8,48 @@
 
 <table class="table">
     <tr>
-        <th>Artist</th>
         <th>Title</th>
+        <th>Artist</th>
         <th>Year</th>
         <th>Track Count</th>
         <th>Disc Count</th>
     </tr>
     {% for album in albums %}
-    
-    <tr>
-        <td><a class=".btn-link" href="{{artist_id}}/"> {{ album.artist_id.name }}</a></td>
-        <td>
-            <a class=".btn-link" href="{{album.id}}/">
-                {{ album.title }}
-            </a>
-        </td>
-        <td>{{ album.year_released }}</td>
-        <td>{{ album.track_count }}</td>
-        <td>{{ album.disc_count }}</td>
-    </tr>
+        <tr>
+            <td>
+                <a class=".btn-link" href="/albums/{{album.id}}/">
+                    {{ album.title }}
+                </a>
+            </td>
+            <td><a class=".btn-link" href="/artists/{{album.artist_id.id}}/"> {{ album.artist_id.name }}</a></td>
+
+            <td>{{ album.year_released }}</td>
+            <td>{{ album.track_count }}</td>
+            <td>{{ album.disc_count }}</td>
+        </tr>
     {% endfor %}
 </table>
 
 <div class="pagination">
-    <span class="step-links">
-        {% if albums.has_previous %}
-        <a href="?page=1">&laquo First</a>
-        <a href="?page={{ albums.previous_page_number }}">previous</a>
-        {% endif %}
+    {% if albums.paginator.num_pages > 1 %}
+        <span class="step-links">
+            
+            {% if albums.has_previous %}
+            <a href="?page=1">&laquo First</a>
+            <a href="?page={{ albums.previous_page_number }}">previous</a>
+            {% endif %}
 
-        <span class="current">
-            Page {{ albums.number }} of {{ albums.paginator.num_pages }}
+            <span class="current">
+                Page {{ albums.number }} of {{ albums.paginator.num_pages }}
+            </span>
+
+            {% if albums.has_next %}
+            <a href="?page={{ albums.next_page_number }}">next</a>
+            <a href="?page={{ albums.paginator.num_pages }}">last &raquo;</a>
+            {% endif %}
+
         </span>
-
-        {% if albums.has_next %}
-        <a href="?page={{ albums.next_page_number }}">next</a>
-        <a href="?page={{ albums.paginator.num_pages }}">last &raquo;</a>
-        {% endif %}
-    </span>
+    {% endif %}
 </div>
-
 
 {% endblock content2 %}

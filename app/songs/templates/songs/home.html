@@ -4,9 +4,6 @@
 {% block title %}Songs | {% endblock title %}
 
 {% block content %}
-<div class="pt-2">
-    <h2>Songs home</h2>
-</div>
 
 <div>
     <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
@@ -34,17 +31,9 @@
                     </li>
 
                     <li class="nav-item">
-                    <a class="nav-link" href="#"
-                        ><i class="fa fa-info fa-lg"></i>Add</a>
+                    <a class="nav-link" href="{% url 'song-add' %}"
+                        ><i class="fa fa-info fa-lg"></i>Add Song</a>
                     </li>
-                    
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Delete</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Edit</a>
-                        </li>
                 </ul>
             <!-- Navbar links (left-justified) -->
             <span class="ml-auto navbar-text"></span>
@@ -52,8 +41,7 @@
     </nav>
 </div>
 
-<div>
-    {% block content2 %}{% endblock content2 %}
-</div>
+    {% block content2 %}
+    {% endblock content2 %}
 
 {% endblock content %}

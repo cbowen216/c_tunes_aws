@@ -1,11 +1,10 @@
 from django.shortcuts import render, redirect
-from django.http import HttpResponse
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator
-from rest_framework import status
 
 from .models import Artist
+from albums.models import Album
 from .forms import ArtistForm
 
 def artisthome(request):
@@ -21,8 +20,7 @@ def artistlist(request):
 
 def artistview(request, pk):
     context = {
-        'artist': Artist.objects.get(id=pk)
-
+        'artist': Artist.objects.get(id=pk), 'albums': Album.objects.filter(artist_id=pk).order_by('year_released')
     }
     return render(request,'artists/view.html', context)
 

@@ -1,4 +1,4 @@
-{% extends "artists/home.html" %}
+{% extends "songs/home.html" %}
 {% load crispy_forms_tags %}
 
 {% block content2 %}
@@ -8,7 +8,7 @@
         {% csrf_token %}
         <fieldset class="form-group">
             <legend class="boarder-bottom mb-4">
-                Edit a current Artist
+                Edit a current Song
             </legend>
             {{ form|crispy }}
         </fieldset>

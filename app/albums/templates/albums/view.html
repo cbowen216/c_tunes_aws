@@ -1,15 +1,39 @@
-{% extends "songs/home.html" %}
+{% extends "albums/home.html" %}
 {% load static %}
 
 {% block content2 %}
 <div class="pt-2">
-    <h5 Class="h5">Song List</h5>
+    <h5>Album</h5>
+</div>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>
+            {{ album.title }}
+        </td>
+
+        <td class="nav-item">
+            <a class="nav-link" href="update/">Edit</a>
+        </td>
+
+        <td class="nav-item">
+            <a class="nav-link" href="delete/">Delete</a>
+        </td>
+    </tr>
+</table>
+
+<div class="pt-2">
+    <h6>Songs</h6>
 </div>
 
 <table class="table">
     <tr>
         <th>Artist</th>
-        <th>Album</th>
         <th>Track #</th>
         <th>Title</th>
         <th>Length</th>
@@ -19,8 +43,6 @@
     <tr>
         <td><a class=".btn-link" href="/artists/{{song.artist_id.id}}/">
                 {{ song.artist_id.name }}</td>
-        <td><a class=".btn-link" href="/albums/{{song.album_id.id}}/">
-                {{ song.album_id.title }}</td>
         <td>{{ song.track_number }}</td>
         <td>
             <a class=".btn-link" href="/songs/{{song.id}}/">
@@ -51,5 +73,4 @@
     </span>
     {% endif %}
 </div>
-
 {% endblock content2 %}
